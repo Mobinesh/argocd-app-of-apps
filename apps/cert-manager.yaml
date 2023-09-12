@@ -17,7 +17,7 @@ spec:
           value: 'true'
   destination:
     namespace: cert-manager
-    name: cert-man
+    name: kind-argocd
   syncPolicy:
     automated: {}
     syncOptions:
