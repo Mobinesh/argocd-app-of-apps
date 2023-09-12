@@ -16,8 +16,8 @@ spec:
         - name: installCRDs
           value: 'true'
   destination:
+    server: https://kubernetes.default.svc
     namespace: cert-manager
-    name: kind-argocd
   syncPolicy:
     automated: {}
     syncOptions:
