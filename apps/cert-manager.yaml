@@ -15,11 +15,9 @@ spec:
       parameters:
         - name: installCRDs
           value: 'true'
-        - name: prometheus.enabled
-          value: 'true'
   destination:
     namespace: cert-manager
-    name: kind
+    name: cert-man
   syncPolicy:
     automated: {}
     syncOptions:
