@@ -4,7 +4,7 @@ metadata:
   name: app-of-apps
 spec:
   destination:
-    name: kind-argocd
+#    name: kind-argocd
     namespace: argocd
   source:
     path: apps
