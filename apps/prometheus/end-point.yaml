@@ -1,0 +1,17 @@
+resource "kubernetes_endpoints_v1" "ha1_endpoint" {
+  metadata {
+    name      = "registry"
+    namespace = "monitoring"
+  }
+
+  subset {
+    address {
+      ip = "172.16.101.17"
+    }
+
+    port {
+      name = "reg-metrics"
+      port = 9100
+    }
+  }
+}
