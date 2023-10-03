@@ -13,11 +13,16 @@ spec:
   source:
     chart: prometheus
     helm:
-     valueFiles:
-        - apps/prometheus/values.yaml
-      # values: |
-      #  pushgateway:
-      #    enabled: false
+     #valueFiles:
+     #   - apps/prometheus/values.yaml
+      values: |
+       pushgateway:
+         enabled: false
+       prometheus:
+          configmap-reload:
+            image:
+              repository: quay.io/prometheus-operator/prometheus-config-reloader
+              tag: v0.67.0
     repoURL: https://prometheus-community.github.io/helm-charts
     targetRevision: '24.1.0'
       #    helm:
