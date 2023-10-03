@@ -13,8 +13,6 @@ spec:
   source:
     chart: prometheus
     helm:
-     #valueFiles:
-     #   - apps/prometheus/values.yaml
       values: |
        pushgateway:
          enabled: false
@@ -28,9 +26,6 @@ spec:
               tag: ""
     repoURL: https://prometheus-community.github.io/helm-charts
     targetRevision: '24.1.0'
-      #    helm:
-      #      valueFiles:
-      #        - values.yaml
   syncPolicy:
     automated:
       prune: true
