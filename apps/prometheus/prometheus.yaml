@@ -19,10 +19,13 @@ spec:
        pushgateway:
          enabled: false
        prometheus:
-          configmap-reload:
-            image:
+          image:
               repository: quay.io/prometheus-operator/prometheus-config-reloader
               tag: v0.67.0
+       server:
+          image:
+              repository: quay.io/prometheus/prometheus
+              tag: ""
     repoURL: https://prometheus-community.github.io/helm-charts
     targetRevision: '24.1.0'
       #    helm:
