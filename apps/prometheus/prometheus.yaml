@@ -14,7 +14,7 @@ spec:
     chart: prometheus
     helm:
      valueFiles:
-        - ./values.yaml
+        - apps/prometheus/values.yaml
       # values: |
       #  pushgateway:
       #    enabled: false
