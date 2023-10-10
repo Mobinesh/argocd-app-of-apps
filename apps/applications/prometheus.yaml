@@ -11,7 +11,7 @@ spec:
     namespace: monitoring
   project: default
   source:
-    path: prometheus
+    path: apps/prometheus
     repoURL: https://github.com/Mobinesh/argocd-app-of-apps
     targetRevision: HEAD
   syncPolicy:
